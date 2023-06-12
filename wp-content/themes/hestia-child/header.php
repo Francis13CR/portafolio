@@ -25,11 +25,12 @@
 	<?php wp_body_open(); ?>
 	<div class="<?php echo esc_attr( $wrapper_div_classes ); ?>">
 	<header class="header <?php echo esc_attr( $header_class ); ?>">
+		
 			<?php
 			hestia_before_header_trigger();
 			do_action( 'hestia_do_top_bar' );
 			do_action( 'hestia_do_header' );
 			hestia_after_header_trigger();
 			?>
-		</header>
+	</header>
 

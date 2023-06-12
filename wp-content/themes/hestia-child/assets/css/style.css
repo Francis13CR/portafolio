@@ -2,7 +2,13 @@
     --white: #ffffff;
     --black: #000000;
 }
-
-.page-header .container .hestia-title{
-    font-size: 10rem;
+.navbar {
+    background-color: #000000; /* Cambia #ff0000 por el color deseado */
+    color: var(--white);
 }
+.hestia-about {
+    border: solid white;
+    border-radius: 1px;
+    background-color:#232323;
+}
+

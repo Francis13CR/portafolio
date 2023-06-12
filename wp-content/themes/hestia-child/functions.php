@@ -5,12 +5,19 @@
 //Para agregar menús personalizados
 function register_menus(){
     register_nav_menus([
-        'menu_principal' => __('Main menu'),
+        'NavBar' => __('NavBar'),
         'menu_secundario' => __('Secondary menu'),
     ]);
 }
 add_action('init','register_menus');
 
+function home(){
+	if (is_front_page()) {
+    echo do_shortcode('[smartslider3 slider="2"]');
+  }
+    
+}
+add_action( 'hestia_after_header_hook', 'home' );
 
 //Para agregar librerias
 function my_libraries(){

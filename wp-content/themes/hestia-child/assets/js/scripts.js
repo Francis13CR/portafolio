@@ -1,3 +1,3 @@
 jQuery(function($){
-    $('.nav-hestia-child').slicknav();
+//    $('.nav-hestia-child').slicknav();
 })

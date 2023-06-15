@@ -1,14 +1,25 @@
 :root{
     --white: #ffffff;
     --black: #000000;
+    --fondo: #232323;
+    --border-post: solid rgba(255, 255, 255, 0.267);
 }
 .navbar {
     background-color: #000000; /* Cambia #ff0000 por el color deseado */
     color: var(--white);
+    opacity: 0.7;
 }
 .hestia-about {
     border: solid white;
     border-radius: 1px;
     background-color:#232323;
+}
+
+.blog-post{
+    background-color: var(--fondo);
+    border: var(--border-post);
+    border-radius: 1px;
+    color: #CCCCCC;
+   
 }
 

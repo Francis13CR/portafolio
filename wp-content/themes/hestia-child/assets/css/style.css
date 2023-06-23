@@ -2,24 +2,128 @@
     --white: #ffffff;
     --black: #000000;
     --fondo: #232323;
-    --border-post: solid rgba(255, 255, 255, 0.267);
+    --border-post:  rgba(206, 206, 206, 0.322);
 }
 .navbar {
-    background-color: #000000; /* Cambia #ff0000 por el color deseado */
+    background-color: #000000; 
     color: var(--white);
     opacity: 0.7;
 }
+.wp-block-post-title a {
+    color: #ffcc00!important; /* Color de título personalizado */
+}
+.moretag{
+    color: #ffcc00!important; /* Color de título personalizado */
+}
+.wp-block-post-excerpt{
+    color: var(--white);
+    text-align: start;
+}
+.footer {
+    margin-top: 10px!important;
+}
 .hestia-about {
-    border: solid white;
-    border-radius: 1px;
+    border: 1px solid var(--border-post);
     background-color:#232323;
 }
-
+.header-filter-gradient {
+    background: var(--fondo)!important
+}
+.active a{
+    color : #FFFF00!important
+}
+.dropdown-menu{
+    background-color: var(--fondo);
+}
 .blog-post{
     background-color: var(--fondo);
-    border: var(--border-post);
-    border-radius: 1px;
+    border: 1px solid  var(--border-post);
+    border-radius: 0px;
+    color: #CCCCCC;   
+}
+.wp-post-image{
+    margin-bottom: 10px;
+}
+.wp-block-latest-posts__featured-image img {
+    object-fit: cover!important;
+}
+
+.recent-post li .wp-block-columns:first-of-type:hover{
+   
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.hestia-blogs{
+    border: 1px solid var(--border-post);
+   
+    background-color: var(--fondo)!important;
     color: #CCCCCC;
+}
+.entry-title a{
+    color: #CCCCCC!important;
+}
+.ocultar{
+    display: none;
+}
+.wp-block-column{
+    text-align: center;
+}
+.icon-element {
+    /* Estilos personalizados */
+    font-size: 10em;
+    color: #ffffff;
+    animation-name: a;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  
+    animation-timing-function: ease-in-out;
    
 }
+.icon-element figure{
+    margin-top: 5px;
+    font-size: 0em;
+}
+  
+  @keyframes a {
+    0% {
+      opacity: 0.5;
+    }
+   
+    50% {
+      opacity: 1;
+    }
+    
+    100% {
+        opacity: 0.5;
+      }
+  }
+  
+  /* Opcional: si deseas agregar más animaciones */
+  
+  .icon-element:hover {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    75% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
 

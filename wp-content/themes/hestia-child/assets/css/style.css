@@ -12,6 +12,9 @@
 .wp-block-post-title a {
     color: #ffcc00!important; /* Color de título personalizado */
 }
+.wp-block-post-excerpt p{
+   font-size: 20px!important;
+}
 .moretag{
     color: #ffcc00!important; /* Color de título personalizado */
 }
@@ -46,6 +49,10 @@
 }
 .wp-block-latest-posts__featured-image img {
     object-fit: cover!important;
+    height: 525px!important;
+}
+.post-img a img{
+  height: 522px!important;
 }
 
 .recent-post li .wp-block-columns:first-of-type:hover{

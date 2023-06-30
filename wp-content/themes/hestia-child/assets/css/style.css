@@ -9,6 +9,9 @@
     color: var(--white);
     opacity: 0.7;
 }
+.mt-5{
+  margin-top: 5px;
+}
 .wp-block-post-title a {
     color: #ffcc00!important; /* Color de título personalizado */
 }

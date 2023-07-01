@@ -1,0 +1,15 @@
+.mi-widget{
+    border: 1px solid #dddd;
+    padding: 2rem;
+    text-align: center;
+}
+
+.mi-widget-titulo{
+    margin: 0;
+    padding: 0 0 2rem 0;
+    text-align: center;
+}
+.mi-widget-imagen{
+    max-width: 100%;
+    height: auto;
+}

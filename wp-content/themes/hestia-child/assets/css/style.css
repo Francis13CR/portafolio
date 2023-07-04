@@ -90,6 +90,11 @@
     animation-timing-function: ease-in-out;
    
 }
+
+.pagebuilder-section{
+  background-color: var(--fondo)!important;
+  color: var(--white);
+}
 .icon-element figure{
     margin-top: 5px;
     font-size: 0em;

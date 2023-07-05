@@ -3,6 +3,7 @@
     --black: #000000;
     --fondo: #232323;
     --border-post:  rgba(206, 206, 206, 0.322);
+    --text-seconday : #999999;
 }
 .navbar {
     background-color: #000000; 
@@ -25,6 +26,19 @@
     color: var(--white);
     text-align: start;
 }
+.author-name{
+  color: var(--text-seconday);
+}
+.posted-by {
+  color: var(--text-seconday);
+}
+.posted-by a{
+  color: var(--text-seconday);
+}
+
+.navbar .navbar-nav > li .dropdown-menu li{
+  color: var(--white)!important;
+}
 .footer {
     margin-top: 10px!important;
 }
@@ -39,7 +53,7 @@
     color : #FFFF00!important
 }
 .dropdown-menu{
-    background-color: var(--fondo);
+    background-color: var(--fondo)!important;
 }
 .blog-post{
     background-color: var(--fondo);
@@ -48,7 +62,7 @@
     color: #CCCCCC;   
 }
 .wp-post-image{
-    margin-bottom: 10px;
+    margin: 10px!important;
 }
 .wp-block-latest-posts__featured-image img {
     object-fit: cover!important;
@@ -56,11 +70,12 @@
 }
 .post-img a img{
   height: 522px!important;
+  margin: 10!important;
 }
 
 .recent-post li .wp-block-columns:first-of-type:hover{
    
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .hestia-blogs{

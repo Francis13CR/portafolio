@@ -105,7 +105,15 @@
     animation-timing-function: ease-in-out;
    
 }
-
+.hestia-title{
+  color: white!important;
+}
+.author{
+  color: white!important;
+}
+.author a{
+  color: white!important;
+}
 .pagebuilder-section{
   background-color: var(--fondo)!important;
   color: var(--white);

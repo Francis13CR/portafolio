@@ -51,6 +51,16 @@ class Mi_Widget extends \Elementor\Widget_Base {
                 'default' => __('Texto de ejemplo', 'widget-elementor'),
             ]
         );
+        $this->add_control(
+            'imagen',
+            [
+                'label' =>  __('imagen', ',widget-elementor'),
+                'type' => \Elementor\Controls_Manager::MEDIA,
+                'default' =>[
+                    'url' => \Elementor\Utils::get_placeholder_image_src(),
+                ],
+            ]
+        );
 
         $this->add_control(
             'enlace',
@@ -109,16 +119,17 @@ class Mi_Widget extends \Elementor\Widget_Base {
         }
         echo '<h2 class="mi-widget-titulo" style="font-size: '.$settings['tamanio_fuente']['size'].$settings['tamanio_fuente']['unit'].';">'.$settings['titulo'].'</h2>';
         echo '<p class="mi-widget-texto" style="font-size: '.$settings['tamanio_fuente']['size'].$settings['tamanio_fuente']['unit'].';">'.$settings['campo_de_texto'].'</p>';
+        echo '<img class="img-widget" src="'.$settings['imagen']['url'].'"> <br>';
 
         if (!empty($settings['enlace']['url'])) {
-            echo '<a href="'.$settings['enlace']['url'].'"';
+            echo '<br><a style="color:#FFFF00!important" href="'.$settings['enlace']['url'].'"';
             if ($settings['enlace']['is_external']) {
                 echo ' target="_blank"';
             }
             if ($settings['enlace']['nofollow']) {
                 echo ' rel="nofollow"';
             }
-            echo '>Enlace</a>';
+            echo '>Ver mas información</a>';
         }
 
         echo '</div>';
